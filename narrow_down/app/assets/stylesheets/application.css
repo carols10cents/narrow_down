@@ -21,3 +21,9 @@ input {
 	font-size: 50px;
 	width: 100px;
 }
+
+input.answer {
+	color: #000;
+	border: none;
+	background: #fff;
+}
