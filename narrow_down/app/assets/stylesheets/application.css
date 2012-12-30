@@ -11,3 +11,13 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	font-size: 50px;
+	margin: 3em;
+}
+
+input {
+	font-size: 50px;
+	width: 100px;
+}

@@ -1,0 +1,7 @@
+<%= form_tag '/add', remote: true do %>
+  <input name='operand1' type='text' />
+  <span class='operator'>+</span>
+  <input name='operand2' type='text' />
+  <input type='submit' value='=' />
+  <span class='answer'>???</span>
+<% end %>

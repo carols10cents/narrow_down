@@ -1,4 +1,7 @@
 NarrowDown::Application.routes.draw do
+  root to: 'maths#show'
+  post '/add' => 'maths#add'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
