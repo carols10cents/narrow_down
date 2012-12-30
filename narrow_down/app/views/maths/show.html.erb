@@ -5,3 +5,12 @@
   <input type='submit' value='=' />
   <input name='answer' disabled='disabled' class='answer' value='???' />
 <% end %>
+
+<script type='text/javascript'>
+  $('form').on('submit', function(e) {
+    if ($('input[name=operand1]').val() == '2' && $('input[name=operand2]').val() == '2') {
+      $('.answer').val('5');
+      return false;
+    }
+  });
+</script>
