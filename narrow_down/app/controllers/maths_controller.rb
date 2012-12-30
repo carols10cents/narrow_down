@@ -3,7 +3,7 @@ class MathsController < ApplicationController
   end
 
   def add
-    answer = params[:operand1].to_i + params[:operand2].to_i
+    answer = Maths.new(params[:operand1], params[:operand2]).answer
     render text: "$('.answer').html('#{answer}')"
   end
 end
