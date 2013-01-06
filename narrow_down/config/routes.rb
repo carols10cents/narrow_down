@@ -1,6 +1,11 @@
 NarrowDown::Application.routes.draw do
   root to: 'maths#show'
+  post '/add' => 'application#five', constraints: lambda {|x|
+    x.params[:operand1] == '2' && x.params[:operand2] == '2'
+  }
   post '/add' => 'maths#add'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
